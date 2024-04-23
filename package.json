@@ -1,17 +1,24 @@
 {
-  "name": "41.1",
-  "version": "1.0.0",
-  "description": "",
-  "main": "expressError.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.19.2",
-    "pg": "^8.11.5"
-  }
+    "name": "41.1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "expressError.js",
+    "scripts": {
+        "test": "NODE_ENV=test jest",
+        "start": "node server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.19.2",
+        "pg": "^8.11.5"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "supertest": "^6.3.4"
+    },
+    "jest": {
+        "testEnvironment": "node"
+    }
 }
